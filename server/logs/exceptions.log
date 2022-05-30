@@ -1,0 +1,540 @@
+{
+  error: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27020
+      at NativeConnection.Connection.openUri (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\connection.js:807:32)
+      at C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\index.js:342:10
+      at C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+      at Mongoose._promiseOrCallback (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\index.js:1181:10)
+      at Mongoose.connect (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\index.js:341:20)
+      at file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js:18:10
+      at ModuleJob.run (node:internal/modules/esm/module_job:185:25)
+      at async Promise.all (index 0) {
+    reason: TopologyDescription {
+      type: 'Unknown',
+      servers: Map(1) {
+        'localhost:27020' => ServerDescription {
+          _hostAddress: new HostAddress('localhost:27020'),
+          address: 'localhost:27020',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 398046215,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27020
+              at connectionFailureError (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongodb\lib\cmap\connect.js:375:20)
+              at Socket.<anonymous> (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongodb\lib\cmap\connect.js:295:22)
+              at Object.onceWrapper (node:events:510:26)
+              at Socket.emit (node:events:390:28)
+              at emitErrorNT (node:internal/streams/destroy:157:8)
+              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+              at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+            [Symbol(errorLabels)]: Set(0) {}
+          }
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      logicalSessionTimeoutMinutes: undefined
+    },
+    code: undefined
+  },
+  level: 'error',
+  message: 'uncaughtException: connect ECONNREFUSED 127.0.0.1:27020\n' +
+    'MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27020\n' +
+    '    at NativeConnection.Connection.openUri (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\connection.js:807:32)\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:342:10\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at Mongoose._promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:1181:10)\n' +
+    '    at Mongoose.connect (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:341:20)\n' +
+    '    at file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js:18:10\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:185:25)\n' +
+    '    at async Promise.all (index 0)',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27020\n' +
+    '    at NativeConnection.Connection.openUri (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\connection.js:807:32)\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:342:10\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at Mongoose._promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:1181:10)\n' +
+    '    at Mongoose.connect (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:341:20)\n' +
+    '    at file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js:18:10\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:185:25)\n' +
+    '    at async Promise.all (index 0)',
+  exception: true,
+  date: 'Mon May 30 2022 13:26:45 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 14564,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.13.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\server.js'
+    ],
+    memoryUsage: {
+      rss: 49856512,
+      heapTotal: 21983232,
+      heapUsed: 19599992,
+      external: 19361889,
+      arrayBuffers: 18278618
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 398034 },
+  trace: [
+    {
+      column: 32,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\connection.js',
+      function: 'NativeConnection.Connection.openUri',
+      line: 807,
+      method: 'openUri',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js',
+      function: null,
+      line: 342,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 32,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: 'promiseOrCallback',
+      line: 31,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js',
+      function: 'Mongoose._promiseOrCallback',
+      line: 1181,
+      method: '_promiseOrCallback',
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js',
+      function: 'Mongoose.connect',
+      line: 341,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 185,
+      method: 'run',
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'async Promise.all',
+      line: null,
+      method: 'all',
+      native: false
+    }
+  ],
+  service: 'log-service',
+  timestamp: '2022-05-30 13:26:45',
+  ip_address: '172.18.128.1'
+}
+{
+  error: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27020
+      at NativeConnection.Connection.openUri (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\connection.js:807:32)
+      at C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\index.js:342:10
+      at C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+      at Mongoose._promiseOrCallback (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\index.js:1181:10)
+      at Mongoose.connect (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\index.js:341:20)
+      at file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js:18:10
+      at ModuleJob.run (node:internal/modules/esm/module_job:185:25)
+      at async Promise.all (index 0) {
+    reason: TopologyDescription {
+      type: 'Unknown',
+      servers: Map(1) {
+        'localhost:27020' => ServerDescription {
+          _hostAddress: new HostAddress('localhost:27020'),
+          address: 'localhost:27020',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 398384999,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27020
+              at connectionFailureError (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongodb\lib\cmap\connect.js:375:20)
+              at Socket.<anonymous> (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongodb\lib\cmap\connect.js:295:22)
+              at Object.onceWrapper (node:events:510:26)
+              at Socket.emit (node:events:390:28)
+              at emitErrorNT (node:internal/streams/destroy:157:8)
+              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+              at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+            [Symbol(errorLabels)]: Set(0) {}
+          }
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      logicalSessionTimeoutMinutes: undefined
+    },
+    code: undefined
+  },
+  level: 'error',
+  message: 'uncaughtException: connect ECONNREFUSED 127.0.0.1:27020\n' +
+    'MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27020\n' +
+    '    at NativeConnection.Connection.openUri (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\connection.js:807:32)\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:342:10\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at Mongoose._promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:1181:10)\n' +
+    '    at Mongoose.connect (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:341:20)\n' +
+    '    at file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js:18:10\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:185:25)\n' +
+    '    at async Promise.all (index 0)',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27020\n' +
+    '    at NativeConnection.Connection.openUri (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\connection.js:807:32)\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:342:10\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at Mongoose._promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:1181:10)\n' +
+    '    at Mongoose.connect (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:341:20)\n' +
+    '    at file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js:18:10\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:185:25)\n' +
+    '    at async Promise.all (index 0)',
+  exception: true,
+  date: 'Mon May 30 2022 13:32:24 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 5440,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.13.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\server.js'
+    ],
+    memoryUsage: {
+      rss: 51163136,
+      heapTotal: 22507520,
+      heapUsed: 20810056,
+      external: 19362637,
+      arrayBuffers: 18279366
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 398372 },
+  trace: [
+    {
+      column: 32,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\connection.js',
+      function: 'NativeConnection.Connection.openUri',
+      line: 807,
+      method: 'openUri',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js',
+      function: null,
+      line: 342,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 32,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: 'promiseOrCallback',
+      line: 31,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js',
+      function: 'Mongoose._promiseOrCallback',
+      line: 1181,
+      method: '_promiseOrCallback',
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js',
+      function: 'Mongoose.connect',
+      line: 341,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 185,
+      method: 'run',
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'async Promise.all',
+      line: null,
+      method: 'all',
+      native: false
+    }
+  ],
+  service: 'log-service',
+  timestamp: '2022-05-30 13:32:24',
+  ip_address: '172.18.128.1'
+}
+{
+  error: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27020
+      at NativeConnection.Connection.openUri (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\connection.js:807:32)
+      at C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\index.js:342:10
+      at C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+      at Mongoose._promiseOrCallback (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\index.js:1181:10)
+      at Mongoose.connect (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongoose\lib\index.js:341:20)
+      at file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js:18:10
+      at ModuleJob.run (node:internal/modules/esm/module_job:185:25)
+      at async Promise.all (index 0) {
+    reason: TopologyDescription {
+      type: 'Unknown',
+      servers: Map(1) {
+        'localhost:27020' => ServerDescription {
+          _hostAddress: new HostAddress('localhost:27020'),
+          address: 'localhost:27020',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 398465830,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27020
+              at connectionFailureError (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongodb\lib\cmap\connect.js:375:20)
+              at Socket.<anonymous> (C:\Users\baska\OneDrive\Desktop\projects\react-typescript\test-app\server\node_modules\mongodb\lib\cmap\connect.js:295:22)
+              at Object.onceWrapper (node:events:510:26)
+              at Socket.emit (node:events:390:28)
+              at emitErrorNT (node:internal/streams/destroy:157:8)
+              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+              at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+            [Symbol(errorLabels)]: Set(0) {}
+          }
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      logicalSessionTimeoutMinutes: undefined
+    },
+    code: undefined
+  },
+  level: 'error',
+  message: 'uncaughtException: connect ECONNREFUSED 127.0.0.1:27020\n' +
+    'MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27020\n' +
+    '    at NativeConnection.Connection.openUri (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\connection.js:807:32)\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:342:10\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at Mongoose._promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:1181:10)\n' +
+    '    at Mongoose.connect (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:341:20)\n' +
+    '    at file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js:18:10\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:185:25)\n' +
+    '    at async Promise.all (index 0)',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27020\n' +
+    '    at NativeConnection.Connection.openUri (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\connection.js:807:32)\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:342:10\n' +
+    '    at C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n' +
+    '    at Mongoose._promiseOrCallback (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:1181:10)\n' +
+    '    at Mongoose.connect (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js:341:20)\n' +
+    '    at file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js:18:10\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:185:25)\n' +
+    '    at async Promise.all (index 0)',
+  exception: true,
+  date: 'Mon May 30 2022 13:33:44 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 10692,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.13.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\server.js'
+    ],
+    memoryUsage: {
+      rss: 50896896,
+      heapTotal: 21983232,
+      heapUsed: 19953376,
+      external: 19361889,
+      arrayBuffers: 18278618
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 398453 },
+  trace: [
+    {
+      column: 32,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\connection.js',
+      function: 'NativeConnection.Connection.openUri',
+      line: 807,
+      method: 'openUri',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js',
+      function: null,
+      line: 342,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: null,
+      line: 32,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js',
+      function: 'promiseOrCallback',
+      line: 31,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js',
+      function: 'Mongoose._promiseOrCallback',
+      line: 1181,
+      method: '_promiseOrCallback',
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\index.js',
+      function: 'Mongoose.connect',
+      line: 341,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'file:///C:/Users/baska/OneDrive/Desktop/projects/react-typescript/test-app/server/server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 185,
+      method: 'run',
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'async Promise.all',
+      line: null,
+      method: 'all',
+      native: false
+    }
+  ],
+  service: 'log-service',
+  timestamp: '2022-05-30 13:33:44',
+  ip_address: '172.18.128.1'
+}

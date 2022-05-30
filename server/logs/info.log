@@ -1,0 +1,75 @@
+{
+  message: 'port listen in 5000',
+  level: 'info',
+  service: 'log-service',
+  timestamp: '2022-05-30 13:26:15',
+  ip_address: '172.18.128.1'
+}
+{
+  message: 'port listen in 5000',
+  level: 'info',
+  service: 'log-service',
+  timestamp: '2022-05-30 13:31:54',
+  ip_address: '172.18.128.1'
+}
+{
+  level: 'error',
+  service: 'log-service',
+  timestamp: '2022-05-30 13:32:07',
+  ip_address: '172.18.128.1',
+  message: 'Operation `detailsschemas.insertOne()` buffering timed out after 10000ms',
+  stack: 'MongooseError: Operation `detailsschemas.insertOne()` buffering timed out after 10000ms\n' +
+    '    at Timeout.<anonymous> (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:151:23)\n' +
+    '    at listOnTimeout (node:internal/timers:557:17)\n' +
+    '    at processTimers (node:internal/timers:500:7)'
+}
+{
+  level: 'error',
+  service: 'log-service',
+  timestamp: '2022-05-30 13:32:16',
+  ip_address: '172.18.128.1',
+  message: 'Operation `detailsschemas.insertOne()` buffering timed out after 10000ms',
+  stack: 'MongooseError: Operation `detailsschemas.insertOne()` buffering timed out after 10000ms\n' +
+    '    at Timeout.<anonymous> (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:151:23)\n' +
+    '    at listOnTimeout (node:internal/timers:557:17)\n' +
+    '    at processTimers (node:internal/timers:500:7)'
+}
+{
+  message: 'port listen in 5000',
+  level: 'info',
+  service: 'log-service',
+  timestamp: '2022-05-30 13:32:54',
+  ip_address: '172.18.128.1'
+}
+{
+  level: 'error',
+  service: 'log-service',
+  timestamp: '2022-05-30 13:33:09',
+  ip_address: '172.18.128.1',
+  message: 'Operation `detailsschemas.insertOne()` buffering timed out after 10000ms',
+  stack: 'MongooseError: Operation `detailsschemas.insertOne()` buffering timed out after 10000ms\n' +
+    '    at Timeout.<anonymous> (C:\\Users\\baska\\OneDrive\\Desktop\\projects\\react-typescript\\test-app\\server\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:151:23)\n' +
+    '    at listOnTimeout (node:internal/timers:557:17)\n' +
+    '    at processTimers (node:internal/timers:500:7)'
+}
+{
+  message: 'port listen in 5000',
+  level: 'info',
+  service: 'log-service',
+  timestamp: '2022-05-30 13:33:14',
+  ip_address: '172.18.128.1'
+}
+{
+  message: 'port listen in 5000',
+  level: 'info',
+  service: 'log-service',
+  timestamp: '2022-05-30 13:33:49',
+  ip_address: '172.18.128.1'
+}
+{
+  message: 'Mongodb connection successfully',
+  level: 'info',
+  service: 'log-service',
+  timestamp: '2022-05-30 13:33:49',
+  ip_address: '172.18.128.1'
+}
