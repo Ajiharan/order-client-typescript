@@ -3,8 +3,10 @@ import "./button.scss";
 
 const CustomButton = ({ label = "SAVE" }) => {
   return (
-    <div className='custom-button-container'>
-      <button type='submit'>{label}</button>
+    <div className="custom-button-container">
+      <button type="submit" className="btn-submit">
+        {label}
+      </button>
     </div>
   );
 };

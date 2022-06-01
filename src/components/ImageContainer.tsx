@@ -4,7 +4,7 @@ import "./styles/image-container.scss";
 
 const ImageContainer = () => {
   return (
-    <div className='home-image-container'>
+    <div className="home-image-container">
       <OrderTitle />
     </div>
   );

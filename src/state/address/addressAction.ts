@@ -13,14 +13,14 @@ export const setAddress =
     const http = new APIService(baseUrl, apiSection);
     http
       .create(data)
-      .then((res) => {
+      .then((res: any) => {
         dispatch(
           setAddressSuccess({
             data: res.data,
           })
         );
       })
-      .catch((err) => {
+      .catch((err: any) => {
         dispatch(
           setAddressFailure({
             error: err.response.data,

@@ -12,7 +12,7 @@ export const getCountries =
     const http = new APIService(baseUrl);
     http
       .getAll(params)
-      .then((res) => {
+      .then((res: any) => {
         dispatch(
           getCountriesSuccess({
             data: res.data.map(
@@ -27,7 +27,7 @@ export const getCountries =
           })
         );
       })
-      .catch((err) => {
+      .catch((err: any) => {
         dispatch(
           getCountriesFailure({
             error: err.message,

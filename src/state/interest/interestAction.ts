@@ -13,14 +13,14 @@ export const setInterest =
     const http = new APIService(baseUrl, apiSection);
     http
       .create(data)
-      .then((res) => {
+      .then((res: any) => {
         dispatch(
           setInterestSuccess({
             data: res.data,
           })
         );
       })
-      .catch((err) => {
+      .catch((err: any) => {
         dispatch(
           setInterestFailure({
             error: err.response.data,

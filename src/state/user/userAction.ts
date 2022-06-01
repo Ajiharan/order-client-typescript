@@ -13,7 +13,7 @@ export const setUserDetail =
     const http = new APIService(baseUrl, order.apiSection);
     http
       .create(order.data)
-      .then((res) => {
+      .then((res: any) => {
         dispatch(
           setUserSuccess({
             data: res.data,
@@ -37,7 +37,7 @@ export const setUserDetail =
           dispatch(setInterestSuccess({ data: null }));
         }
       })
-      .catch((err) => {
+      .catch((err: any) => {
         dispatch(
           setUserFailure({
             error: err.response,

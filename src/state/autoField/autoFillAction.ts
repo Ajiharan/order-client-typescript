@@ -12,7 +12,7 @@ export const getAutoFill =
     const http = new APIService(baseUrl);
     http
       .getAll(params)
-      .then((res) => {
+      .then((res: any) => {
         dispatch(
           getAutoFillSuccess({
             data: res.data?.results
@@ -40,7 +40,7 @@ export const getAutoFill =
           })
         );
       })
-      .catch((err) => {
+      .catch((err: any) => {
         dispatch(
           getAutoFillFailure({
             error: err.message,
